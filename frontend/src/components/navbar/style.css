@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.navbar {
+    /* Config */
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    
+    /* Syles */
+    background-color: #1c1c1c;
+    border-top: 0.5vh solid #FB8D12;
+}
+
+.LogoSiteImage {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu {
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.menu-line-1 {
+    width: 42px;
+    height: 115px;
+    background-color: #ffffff;
+}
+
+.menu-line-2 {
+    width: 42px;
+    height: 115px;
+    background-color: #ffffff;
+}
+
+.menu-line-3 {
+    width: 42px;
+    height: 115px;
+    background-color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    color: #ffffff;
+}
+
+.navbar ul li {
+    margin: 0 12px;
+    cursor: pointer;
+}
