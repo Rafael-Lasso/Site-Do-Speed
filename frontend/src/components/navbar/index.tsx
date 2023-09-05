@@ -1,16 +1,17 @@
+import Link from "next/link";
 import Image from "next/image";
 
-import LogoSite from './LogoSite.png'
-import './style.css'
+import LogoSite from "./LogoSite.png";
+import "./style.css";
 
 const Navbar = () => {
   return (
     <>
       <nav className="navbar">
         <div className="menu">
-          <div className="line-1"></div>
-          <div className="line-2"></div>
-          <div className="line-3"></div>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
         </div>
         <Image
           className="LogoSiteImage"
@@ -20,10 +21,18 @@ const Navbar = () => {
           alt="Logo Speed Otaku Central"
         />
         <ul>
-          <li>Início</li>
-          <li>Curiosidades</li>
-          <li>Noticias</li>
-          <li>Mangás</li>
+          <li>
+            <Link href="/">Início</Link>
+          </li>
+          <li>
+            <Link href="/Curiosidades">Curiosidades</Link>
+          </li>
+          <li>
+            <Link href="/Noticias">Noticias</Link>
+          </li>
+          <li>
+            <Link href="/Mangás">Mangás</Link>
+          </li>
         </ul>
       </nav>
     </>
