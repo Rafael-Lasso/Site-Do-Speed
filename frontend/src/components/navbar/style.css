@@ -1,75 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.navbar {
-  /* Config */
-  display: flex;
-  height: 13vh;
-  justify-content: space-evenly;
-  align-items: center;
-  /* Syles */
-  background-color: #1c1c1c;
-  border-top: 0.5vh solid #fb8d12;
-}
-
-.LogoSiteImage {
-  padding: 15px;
-  cursor: pointer;
-}
-
-.menu {
-  width: auto;
-  height: auto;
-  padding: 20px;
-  cursor: pointer;
-  display: none;
-}
-
-.menu-activated {
-  width: auto;
-  height: auto;
-  padding: 20px;
-  cursor: pointer;
-}
-
-.menu div {
-  margin: 7px;
-}
-
-.menu .line1 {
-  width: 40px;
-  height: 4px;
-  left: 1;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-.menu .line2 {
-  width: 21px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-.menu .line3 {
-  width: 32px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-.navbar ul {
-  display: flex;
-  color: #ffffff;
-}
-
-.navbar ul li {
-  position: relative;
-  padding: 5px 0;
-  margin: 0 12px;
-  cursor: pointer;
-}
-
-.navbar ul li::before {
+ul li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -83,7 +14,7 @@
   cursor: pointer;
 }
 
-.navbar ul li::after {
+ul li::after {
   content: "";
   position: absolute;
   right: 0;
@@ -97,12 +28,12 @@
   cursor: pointer;
 }
 
-.navbar ul li:hover::before {
+ul li:hover::before {
   transform: translateX(99%);
   width: 50%;
 }
 
-.navbar ul li:hover::after {
+ul li:hover::after {
   transform: translateX(-99%);
   width: 50%;
 }
