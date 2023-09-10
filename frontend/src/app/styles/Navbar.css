@@ -3,9 +3,10 @@
 .navmenu {
   padding: 4px;
   cursor: pointer;
+  align-items: center;
 }
 
-ul li::before {
+ li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -19,7 +20,7 @@ ul li::before {
   cursor: pointer;
 }
 
-ul li::after {
+ li::after {
   content: "";
   position: absolute;
   right: 0;
@@ -33,12 +34,12 @@ ul li::after {
   cursor: pointer;
 }
 
-ul li:hover::before {
+ li:hover::before {
   transform: translateX(99%);
   width: 50%;
 }
 
-ul li:hover::after {
+ li:hover::after {
   transform: translateX(-99%);
   width: 50%;
 }
@@ -48,6 +49,8 @@ ul li:hover::after {
   gap: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(244 244 245 / var(--tw-text-opacity));
+  transition: 0.5s;
+
 }
 
 .setMenu {
@@ -59,7 +62,30 @@ ul li:hover::after {
 
   left: 0;
   bottom: 0;
-  width: 33vw;
+  width: 100vw;
   height: 88vh;
   background-color: rgb(24, 24, 27);
+  transition: 0.75s;
+}
+
+.setMenu li {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    width: 33vw;
+    height: 88vh;
+    background-color: rgb(24, 24, 27);
+    transition: .75s;
+  }
 }
