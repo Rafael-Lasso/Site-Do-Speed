@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.navmenu{
+.navmenu {
   padding: 4px;
   cursor: pointer;
 }
@@ -41,4 +41,25 @@ ul li:hover::before {
 ul li:hover::after {
   transform: translateX(-99%);
   width: 50%;
+}
+
+.menu {
+  display: flex;
+  gap: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
+
+.setMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  width: 33vw;
+  height: 88vh;
+  background-color: rgb(24, 24, 27);
 }
