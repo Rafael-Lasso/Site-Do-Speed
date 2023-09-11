@@ -1,0 +1,14 @@
+.contentNotices {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+
+  width: 100vw;
+  height: 70vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}

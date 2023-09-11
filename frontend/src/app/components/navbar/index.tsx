@@ -9,7 +9,7 @@ import React, { useState } from "react";
 
 // FROM PROJECT
 import LogoSite from "./logoSite.png";
-import "../../app/styles/Navbar.css";
+import "../../styles/navbar.css";
 
 function Navbar() {
   const [menu, setMenu] = useState("menu");
@@ -18,19 +18,15 @@ function Navbar() {
     setMenu("setMenu");
 
     if (document.getElementById("menu")) {
-      console.log("Setou o menu");
-      return setMenu("setMenu");;
-    }
-
-    else {
-      console.log("Voltou o menu");
-      return setMenu("menu");;
+      return setMenu("setMenu");
+    } else {
+      return setMenu("menu");
     }
   };
 
   return (
     <>
-      <nav className="max-md:justify-center place-items-center justify-evenly h-32 border-t-4 items-center flex bg-zinc-900 border-orange-500 text-zinc-100">
+      <nav className="max-md:justify-center relative place-items-center justify-evenly h-32 border-t-4 items-center flex bg-zinc-900 border-orange-500 text-zinc-100">
         <div className="navmenu md:hidden" onClick={setMenuNavlist}>
           <div className="m-1.5 w-10 h-1 rounded bg-slate-100"></div>
           <div className="m-1.5 w-5 h-1 rounded bg-slate-100"></div>
@@ -63,5 +59,4 @@ function Navbar() {
     </>
   );
 }
-
 export default Navbar;

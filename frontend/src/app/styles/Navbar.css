@@ -6,11 +6,11 @@
   align-items: center;
 }
 
- li::before {
+li::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   width: 0%;
   height: 5px;
   border-top-right-radius: 10px;
@@ -20,11 +20,11 @@
   cursor: pointer;
 }
 
- li::after {
+li::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -5px;
   width: 0%;
   height: 5px;
   border-top-left-radius: 10px;
@@ -34,12 +34,12 @@
   cursor: pointer;
 }
 
- li:hover::before {
+li:hover::before {
   transform: translateX(99%);
   width: 50%;
 }
 
- li:hover::after {
+li:hover::after {
   transform: translateX(-99%);
   width: 50%;
 }
@@ -50,7 +50,6 @@
   --tw-text-opacity: 1;
   color: rgb(244 244 245 / var(--tw-text-opacity));
   transition: 0.5s;
-
 }
 
 .setMenu {
@@ -59,6 +58,7 @@
   justify-content: space-around;
   align-items: center;
   position: absolute;
+  z-index: 10;
 
   left: 0;
   bottom: 0;
@@ -74,11 +74,12 @@
 
 @media (max-width: 767px) {
   .menu {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    z-index: 10;
 
     position: absolute;
     left: -100%;
@@ -86,6 +87,6 @@
     width: 33vw;
     height: 88vh;
     background-color: rgb(24, 24, 27);
-    transition: .75s;
+    transition: 0.75s;
   }
 }

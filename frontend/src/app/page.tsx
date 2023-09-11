@@ -1,11 +1,12 @@
-import React, { useState } from "react";
-import Navbar from "@/components/navbar";
+import React, { Suspense } from "react";
+import SharinganLoading from "./loading";
+import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main></main>
+      <div className="contentNotices"></div>
     </>
   );
 }
