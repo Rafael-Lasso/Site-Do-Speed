@@ -1,0 +1,5 @@
+package whatsapp
+
+func testWhatsappService() {
+
+}

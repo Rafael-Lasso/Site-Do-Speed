@@ -1,12 +1,12 @@
 package sms
 
 import (
+	"os"
+	"log"
 	"fmt"
 	"github.com/joho/godotenv"
 	"github.com/twilio/twilio-go"
-	openapi "github.com/twilio/twilio-go/rest/api/v2010"
-	"log"
-	"os"
+	api "github.com/twilio/twilio-go/rest/api/v2010"
 )
 
 func smsMessage() {
@@ -26,16 +26,20 @@ func smsMessage() {
 
 	message := "Ola, este SMS foi enviado com Go , e , com Api Twilio "
 
-	params := &openapi.CreateMessageParams{}
-	params.SetTo(os.Getenv("TWILIO_TO"))
-	params.SetFrom(os.Getenv("TWILIO_FROM"))
+	params := &api.CreateMessageParams{}
 	params.SetBody(message)
+	params.SetFrom(os.Getenv("TWILIO_FROM"))
+	params.SetTo(os.Getenv("TWILIO_TO"))
 
 	resp, err := client.Api.CreateMessage(params)
 	if err != nil {
 		fmt.Println(err.Error())
-		err = nil
 	} else {
-		fmt.Println("Message Sid: " + *resp.Sid)
+		if resp.Sid != nil {
+			fmt.Println(*resp.Sid)
+		} else {
+			fmt.Println(resp.Sid)
+		}
 	}
+
 }
