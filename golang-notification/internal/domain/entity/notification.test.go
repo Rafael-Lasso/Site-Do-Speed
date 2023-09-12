@@ -1,5 +1,5 @@
 package entity
 
-func TestEntitie() {
+func testEntity() {
 	
 }
