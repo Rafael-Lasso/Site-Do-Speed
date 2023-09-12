@@ -1,8 +1,9 @@
-package whatsapp
 // Download the helper library from https://www.twilio.com/docs/go/install
+package main
 
 import (
 	"fmt"
+
 	"github.com/twilio/twilio-go"
 	api "github.com/twilio/twilio-go/rest/api/v2010"
 )

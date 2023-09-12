@@ -1,15 +1,15 @@
-package sms
+package main
 
 import (
-	"os"
-	"log"
 	"fmt"
 	"github.com/joho/godotenv"
 	"github.com/twilio/twilio-go"
 	api "github.com/twilio/twilio-go/rest/api/v2010"
+	"log"
+	"os"
 )
 
-func smsMessage() {
+func main() {
 
 	err := godotenv.Load()
 	if err != nil {
@@ -24,12 +24,12 @@ func smsMessage() {
 		Password: authToken,
 	})
 
-	message := "Ola, este SMS foi enviado com Go , e , com Api Twilio "
+	message := "Acabou de sair um Post novo com um tema que voce vai adorar! Vem ver 😁: https://www.youtube.com/@SpeedUzumaki"
 
 	params := &api.CreateMessageParams{}
 	params.SetBody(message)
-	params.SetFrom(os.Getenv("TWILIO_FROM"))
-	params.SetTo(os.Getenv("TWILIO_TO"))
+	params.SetFrom("+15855656329")
+	params.SetTo("+5518997635588")
 
 	resp, err := client.Api.CreateMessage(params)
 	if err != nil {
