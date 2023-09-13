@@ -8,14 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors:{
-        "speedOrange": "#FB8D12",
+      colors: {
+        speedOrange: "#FB8D12",
       },
       height: {
-        "40pcnt": "height: 50%;",
+        "vh1": "height: 10vh",
+        "50px": "height: 12rem;",
       },
       width: {
-        "full-vw": "width: 100vw;",
+        "/50px": "width: 12rem;",
+        "30vw": "width: 30vw",
       },
     },
   },

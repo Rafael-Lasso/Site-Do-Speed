@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
+
 .contentNotices {
   display: flex;
-  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -11,4 +12,34 @@
   height: 70vh;
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.notice-post {
+  height: 187px;
+}
+
+.container-select-topic {
+  height: 60vh;
+}
+
+@media (max-width: 1040px) {
+  .container-select-topic {
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .contentNotices {
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+
+    width: 100vw;
+    height: auto;
+    --tw-bg-opacity: 1;
+    background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  }
 }
