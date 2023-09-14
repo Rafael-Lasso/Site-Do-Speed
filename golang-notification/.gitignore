@@ -1,0 +1,11 @@
+# production
+/build
+.vscode
+
+#scripts
+scripts/node_modules
+
+# local env files
+.env*.local
+*/.env
+config/.env
