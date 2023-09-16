@@ -1,5 +1,7 @@
 package main
 
-func testWhatsappService() {
+import "testing"
+
+func testWhatsappService(t *testing.T) {
 
 }

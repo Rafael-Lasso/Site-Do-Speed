@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func main() {
+func mainSMS() {
 
 	err := godotenv.Load()
 	if err != nil {

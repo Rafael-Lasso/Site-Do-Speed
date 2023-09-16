@@ -1,8 +1,6 @@
 <br>
- <div style="display:flex" align="center" class="imgs">
- <img style="margin: 0 20px;" height="100em" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/800px-Go_Logo_Blue.svg.png">
-
- <img height="100em" src="https://cdn.worldvectorlogo.com/logos/twilio.svg"> 
+<div align="center" class="imgs"> 
+<img style="margin: 0 20px;" height="100em" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/800px-Go_Logo_Blue.svg.png">
 </div>
 <br>
 
@@ -30,45 +28,58 @@ O Serviço de Notificação é escrito em codigo Go, localizado na package
 
 <br>
 
-  <hr>
 
-## API
+## Arquitetura
 
-A Api escolhida foi Api <a style="text-decoration:none" href="https://www.twilio.com/"><b style="color:#FB8D12;cursor:pointer;"><i>Twilio</i></b></a> pois possui facil integração com mais diversos sistemas, suporte e uma documentação completa, alem de ser ultilisada por grandes empresas como
-<br>
+<div align="center" class="imgs"> 
+   <img width="510rem" src="https://miro.medium.com/v2/resize:fit:800/1*0R0r00uF1RyRFxkxo3HVDg.png">
+</div>
 
-- Nubank
-- Mercado Livre
-- Dasa
-- Inter
-- Rappi
+### Os Principios
 
-Não é um serviço qualquer sem confiança, por isso sua escolha
+<p>A arquitetura do Software é com base nos principios da Cleand Architeture, por objetivo padronizar e organizar o código desenvolvido, favorecer a sua reusabilidade, assim como independência de tecnologia.</p>
 
-<hr>
 
-## Variaveis de Ambiente
+### Build
+<p>
+Contem o arquivo</p>
 
-Para poder rodar a aplicação é de estrema importancia
+        .dockerfile
 
-- Criar um arquivo <b><i>.env</i></b>
-  (Windows)
+### Cmd
+<p>
+Contem o arquivo main do projeto</p>
 
-          type nul > ".env"
+        main.go
 
-- Criar um arquivo <b><i>.env</i></b>
-  (Linux)
+### Config
+        .env
+<p>
+Contem o arquivo de configurações do projeto</p>
 
-          cat > .env
+### Docs
+<p>
+Contem o arquivo de Documentações do projeto</p>
 
-- Criar um arquivo <b><i>.env</i></b>
-  (Mac OS)
+        *.md
 
-          touch .env
+### Internal
+<p>
+Contem os arquivo de funcionalidade interna do projeto</p>
 
-- Escrever as Variaveis da seguinte forma
+### Pkg
+<p>
+Contem os arquivo de funcionalidade externa do projeto</p>
 
-        ACCOUNT_SID=SeuSidGeradoDaApi
-        AUTH_TOKEN=SeuTockenGeradoDaApi
-        TWILIO_TO=+NumRemetente (Codigo Nacional + Numero)
-        TWILIO_FROM=+SeuNumeroGeradoDaApi
+### Scripts
+<p>
+Contem os Scripts do projeto </p>
+
+### Test
+<p>
+Contem os Testes do projeto</p>
+
+        e2e
+        env
+        integration
+        web

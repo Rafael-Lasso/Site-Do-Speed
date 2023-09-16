@@ -1,5 +1,5 @@
-// Download the helper library from https://www.twilio.com/docs/go/install
 package main
+// Download the helper library from https://www.twilio.com/docs/go/install
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	api "github.com/twilio/twilio-go/rest/api/v2010"
 )
 
-func main() {
+func WhatsappService() {
 	// Find your Account SID and Auth Token at twilio.com/console
 	// and set the environment variables. See http://twil.io/secure
 
@@ -21,6 +21,8 @@ func main() {
 	}
 	accountSid := os.Getenv("ACCOUNT_SID")
 	authToken := os.Getenv("AUTH_TOKEN")
+	whatsappFROM := os.Getenv("WHATSAPP_FROM")
+	whatsappTO := os.Getenv("WHATSAPP_TO")
 
 	client := twilio.NewRestClientWithParams(twilio.ClientParams{
 		Username: accountSid,
@@ -28,9 +30,9 @@ func main() {
 	})
 
 	params := &api.CreateMessageParams{}
-	params.SetFrom("whatsapp:+14155238886")
+	params.SetFrom(whatsappFROM)
 	params.SetBody("Acabou de sair um Post novo com um tema que voce vai adorar! Vem ver 😁:")
-	params.SetTo("whatsapp:+5518997635588")
+	params.SetTo(whatsappTO)
 
 	resp, err := client.Api.CreateMessage(params)
 	if err != nil {
@@ -45,4 +47,8 @@ func main() {
 			fmt.Println("Failed to send message")
 		}
 	}
+}
+
+func main() {
+	WhatsappService()
 }

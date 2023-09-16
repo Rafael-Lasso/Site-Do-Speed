@@ -21,41 +21,51 @@ type TopicNotification struct {
 	TopicInterest bool   `json:"interest"`
 }
 
-func (t *TopicNotification) ValidTopicNotification() {
-
-	if t.TopicInterest == false {
-		log.Fatalln("Error! To send notification, user interest is required")
-	} else {
-		fmt.Println("Permission to send message validated successfully")
-	}
-
+type Notifications struct {
+	Notifications []Notification `json:"notifications"`
 }
 
-func (n Notification) ValidNotification() {
+
+func ValidNotification(n Notification) {
 
 	if n.ActiveNotification == false {
-		log.Fatalln("Error! To send notification, active permission is required")
+		log.Fatalln("❌ | Error! To send notification, active permission is required")
 	} else {
-		fmt.Println("Permission to send message validated successfully")
+		fmt.Println("✅ | Permission to send message validated successfully")
 	}
 
 }
 
-func main() {
+func ValidTopicNotification(t TopicNotification) {
+
+	if t.TopicInterest == false {
+		log.Fatalln("❌ | Error! To send notification, user interest is required")
+	} else {
+		fmt.Println("✅ | Permission to send message validated successfully")
+	}
+
+}
+
+func validAll() {
 
 	notific := Notification{
 		Id:      1,
-		Title:   "Post novo",
+		Title:   "Dragon Ball",
 		Message: "Acabou de sair um Post novo",
 		DateMsg: "13-09-2023",
 		Topic: TopicNotification{
 			TopicId:       1,
 			TopicTitle:    "Dragon Ball",
-			TopicInterest: true,
+			TopicInterest: false,
 		},
 		ActiveNotification: true,
 	}
 
-	notific.ValidNotification()
-	notific.Topic.ValidTopicNotification()
+	ValidNotification(notific)
+	ValidTopicNotification(notific.Topic)
+}
+
+
+func main() {
+	validAll()
 }
