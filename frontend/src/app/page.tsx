@@ -8,22 +8,37 @@ import BlogSection from "./components/sections/blog";
 import Topic from "./components/sections/topics";
 import Footer from "./components/footer";
 
+import "../app/styles/globals.css";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="contentNotices justify-center items-center">
-        <div className="container-notices flex flex-wrap justify-center items-center">
-          <div className="large-notice-post m-1 bg-zinc-400 w-60 h-96 sm:notice-post"></div>
-          <div className="sub-posts flex flex-col">
-            <div className="notice-post m-1 bg-zinc-400 w-80"></div>
-            <div className="notice-post m-1 bg-zinc-400 w-80"></div>
+      <div className="flex flex-wrap justify-center items-center bg-zinc-800 h-auto sm:h-vh60 ">
+        <div className="container-notice-post flex flex-wrap justify-center items-center h-full relative">
+          <div className="large-notice-post  cursor-pointer flex justify-start items-end  m-1 bg-zinc-400 sm:smw-44:w-80">
+            <h2 className="ml-4 text-zinc-50 drop-shadow-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </h2>
+          </div>
+          <div className="sub-posts flex-col">
+            <div className="notice-post cursor-pointer m-1 bg-zinc-400 w-80 flex justify-start items-end large-notice-post">
+              <h2 className="ml-4 text-zinc-50 drop-shadow-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </h2>
+            </div>
+            <div className="notice-post cursor-pointer m-1 bg-zinc-400 w-80 flex justify-start items-end large-notice-post">
+              <h2 className="ml-4 text-zinc-50 drop-shadow-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </h2>
+            </div>
           </div>
         </div>
       </div>
       <Topic />
 
-      <h1 className="titule-posts flex justify-center items-center text-7xl	text-center">
+      <h1 className="titule-posts flex justify-center items-center text-4xl	text-center sm:text-6xl">
         Novidades Diretas Do Forno
       </h1>
 
@@ -32,7 +47,7 @@ export default function Home() {
       <SocialMedias />
       <TopicsNavigation />
       <GetEmail />
-      <Footer/>
+      <Footer />
     </>
   );
 }

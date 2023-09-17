@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
 
-.contentNotices {
-  display: flex;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -10;
-
-  width: 100vw;
-  height: 70vh;
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-}
-
 .notice-post {
   height: 187px;
 }
@@ -28,18 +14,40 @@
   }
 }
 
-@media (max-width: 575px) {
-  .contentNotices {
-    display: flex;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -10;
+.container-notice-post {
+  height: 60vh;
+}
 
-    width: 100vw;
+.large-notice-post {
+  width: 240px;
+  height: 388px;
+}
+
+.sub-posts > .notice-post {
+  width: 320px;
+  height: 190px;
+}
+
+.bg-image {
+  background: url("https://img.freepik.com/premium-vector/colorful-liquid-background-liquid-paper-marbling-paint-background-marble-texture_630814-57.jpg")
+    no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  opacity: 25%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: 592px) {
+  .large-notice-post {
+    width: 320px;
+    height: 190px;
+  }
+  .container-notice-post {
     height: auto;
-    --tw-bg-opacity: 1;
-    background-color: rgb(39 39 42 / var(--tw-bg-opacity));
   }
 }

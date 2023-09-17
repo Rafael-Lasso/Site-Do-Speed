@@ -1,8 +1,8 @@
 const GetEmail = () => {
   return (
     <>
-      <section className="flex flex-col items-center justify-center h-96">
-        <h2 className="max-w-md m-10 text-center text-5xl max-w">
+      <section className="flex flex-col items-center justify-center h-vh60 sm:h-96">
+        <h2 className="max-w-md m-10 text-center text-3xl max-w  sm:text-5xl">
           Se inscreva e receba novidades exclusivas do (Nome do Site)!
         </h2>
         <form
@@ -16,7 +16,7 @@ const GetEmail = () => {
             placeholder="Digite seu Email Aqui 👇"
           />
           <button
-            className="w-52 h-14 m-1 text-white bg-zinc-700"
+            className="w-52 h-14 m-1 text-white bg-zinc-700 hover:bg-speedOrange transition-all"
             type="submit"
           >
             Quero Ficar Por Dentro

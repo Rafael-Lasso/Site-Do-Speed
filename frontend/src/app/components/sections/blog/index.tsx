@@ -1,47 +1,82 @@
+"client-only";
+
+import Image from "next/image";
+import Button from "../../button";
+import PostImage from "../../../assets/imgs/20221026_002435.jpg";
+
 const BlogSection = () => {
   return (
     <>
-      <h2 className="flex justify-center m-10 text-5xl w-full">Recentes</h2>
-      <div className="container-blogs-posts w-full h-auto">
+      <div className="container-blogs-posts  w-full h-auto">
         <div className="container-notices flex flex-wrap  justify-center items-center">
           <div className="posts flex flex-wrap justify-center max-w-7xl">
+            <h2 className="flex justify-start mt-5 text-4xl w-full sm:text-5xl ml-32">
+              Recentes
+            </h2>
             <div className="notice-card flex flex-col justify-center items-center font-bold">
-              <div className="notice-post m-4 bg-zinc-400 w-80 cursor-pointer"></div>
-              <h3 className="max-w-xs text-lg text-center cursor-pointer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </h3>
+              <div className="loading m-2">
+                <div className="notice-post m-4 w-80 cursor-pointer"></div>
+              </div>
+              <div className="title loading">
+                <h3 className="max-w-xs text-lg text-center cursor-pointer">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+              </div>
             </div>
             <div className="notice-card flex flex-col justify-center items-center font-bold">
-              <div className="notice-post m-4 bg-zinc-400 w-80 cursor-pointer"></div>
-              <h3 className="max-w-xs text-lg text-center cursor-pointer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </h3>
+              <div className="loading m-2">
+                <div className="notice-post m-4 w-80 cursor-pointer"></div>
+              </div>
+              <div className="title loading">
+                <h3 className="max-w-xs text-lg text-center cursor-pointer">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+              </div>
             </div>
             <div className="notice-card flex flex-col justify-center items-center font-bold">
-              <div className="notice-post m-4 bg-zinc-400 w-80 cursor-pointer"></div>
-              <h3 className="max-w-xs text-lg text-center cursor-pointer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </h3>
+              <div className="loading m-2">
+                <div className="notice-post m-4 w-80 cursor-pointer"></div>
+              </div>
+              <div className="title loading">
+                <h3 className="max-w-xs text-lg text-center cursor-pointer">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+              </div>
             </div>
             <div className="notice-card flex flex-col justify-center items-center font-bold">
-              <div className="notice-post m-4 bg-zinc-400 w-80 cursor-pointer"></div>
-              <h3 className="max-w-xs text-lg text-center cursor-pointer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </h3>
+              <div className="loading m-2">
+                <div className="notice-post m-4 w-80 cursor-pointer"></div>
+              </div>
+              <div className="title loading">
+                <h3 className="max-w-xs text-lg text-center cursor-pointer">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+              </div>
             </div>
             <div className="notice-card flex flex-col justify-center items-center font-bold">
-              <div className="notice-post m-4 bg-zinc-400 w-80 cursor-pointer"></div>
-              <h3 className="max-w-xs text-lg text-center cursor-pointer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </h3>
+              <div className="loading m-2">
+                <div className="notice-post m-4 w-80 cursor-pointer"></div>
+              </div>
+              <div className="title loading">
+                <h3 className="max-w-xs text-lg text-center cursor-pointer">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+              </div>
             </div>
             <div className="notice-card flex flex-col justify-center items-center font-bold">
-              <div className="notice-post m-4 bg-zinc-400 w-80 cursor-pointer"></div>
-              <h3 className="max-w-xs text-lg text-center cursor-pointer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </h3>
+              <div className="loading m-2">
+                <div className="notice-post m-4 w-80 cursor-pointer"></div>
+              </div>
+              <div className="title loading">
+                <h3 className="max-w-xs text-lg text-center cursor-pointer">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center mt-5">
+          <Button />
         </div>
       </div>
     </>
