@@ -17,6 +17,9 @@ h5,
 h6 {
   font-family: "Rajdhani", sans-serif;
 }
+:root{
+  --speedOrange: #fb8d12;
+}
 
 html {
   width: auto;
@@ -37,7 +40,7 @@ body {
 }
 
 ::selection {
-  background-color: #fb8d12;
+  background-color: var(--speedOrange);
 }
 /* 
 .title.loading {

@@ -9,7 +9,6 @@ import Topic from "./components/sections/topics";
 import Footer from "./components/footer";
 
 import "../app/styles/globals.css";
-import Image from "next/image";
 
 export default function Home() {
   return (
