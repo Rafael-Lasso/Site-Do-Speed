@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import LogoSite from "./logoSite.png";
 import "../../styles/navbar.css";
 
-function Navbar() {
+function Navbar(): JSX.Element {
   const [menu, setMenu] = useState("menu");
 
   const setMenuNavlist = () => {
@@ -26,8 +26,8 @@ function Navbar() {
 
   return (
     <>
-      <div className="block">
-        <nav className="max-md:justify-center relative place-items-center justify-evenly h-32 border-t-4 items-center flex bg-zinc-900 border-orange-500 text-zinc-100 z-20">
+      
+        <nav className="navbar max-md:justify-center relative place-items-center justify-evenly h-vh15 border-t-4 items-center flex bg-zinc-900 border-orange-500 text-zinc-100 z-20">
           <div className="navmenu z-20 md:hidden" onClick={setMenuNavlist}>
             <div className="m-1.5 w-10 h-1 rounded bg-slate-100"></div>
             <div className="m-1.5 w-5 h-1 rounded bg-slate-100"></div>
@@ -47,17 +47,16 @@ function Navbar() {
               <Link href="/">Início</Link>
             </li>
             <li className="cursor-pointer p-1 mt-3 mb-3 relative max-md:hidden">
-              <Link href="/Curiosidades">Curiosidades</Link>
+              <Link href="/curiosidades">Curiosidades</Link>
             </li>
             <li className="cursor-pointer p-1 mt-3 mb-3 relative max-md:hidden">
-              <Link href="/Notícias">Notícias</Link>
+              <Link href="/noticias">Notícias</Link>
             </li>
             <li className="cursor-pointer p-1 mt-3 mb-3 relative max-md:hidden">
-              <Link href="/Mangás">Mangás</Link>
+              <Link href="/mangas">Mangás</Link>
             </li>
           </ul>
         </nav>
-      </div>
     </>
   );
 }

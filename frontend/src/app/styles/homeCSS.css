@@ -51,3 +51,13 @@
     height: auto;
   }
 }
+
+.filter-topic:hover svg {
+  fill: #fff;
+  transition: all ease-in-out;
+}
+
+/* 
+svg {
+  padding: 20px;
+} */

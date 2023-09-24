@@ -12,8 +12,9 @@ const config: Config = {
         speedOrange: "#FB8D12",
       },
       height: {
-        "vh60": "60vh",
-        "50px": "height: 12rem;",
+        vh15: "15vh;",
+        vh60: "60vh",
+        vh85: "85vh",
       },
       width: {
         "50vw": "80vw",

@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-li::before {
+.navbar ul li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -20,7 +20,7 @@ li::before {
   cursor: pointer;
 }
 
-li::after {
+.navbar ul li::after {
   content: "";
   position: absolute;
   right: 0;
@@ -34,12 +34,12 @@ li::after {
   cursor: pointer;
 }
 
-li:hover::before {
+.navbar ul li:hover::before {
   transform: translateX(99%);
   width: 50%;
 }
 
-li:hover::after {
+.navbar ul li:hover::after {
   transform: translateX(-99%);
   width: 50%;
 }

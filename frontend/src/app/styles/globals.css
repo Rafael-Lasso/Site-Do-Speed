@@ -17,7 +17,7 @@ h5,
 h6 {
   font-family: "Rajdhani", sans-serif;
 }
-:root{
+:root {
   --speedOrange: #fb8d12;
 }
 
@@ -39,13 +39,17 @@ body {
   background-color: #d3d3d3;
 }
 
+nav ul li {
+  cursor: pointer;
+}
+
 ::selection {
   background-color: var(--speedOrange);
 }
-/* 
-.title.loading {
-  position: relative;
-} */
+input::selection {
+  background-color: var(--speedOrange);
+  color: white;
+}
 
 .notice-card .loading {
   position: relative;
