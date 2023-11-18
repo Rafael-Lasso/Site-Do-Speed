@@ -1,4 +1,6 @@
-const Footer = () => {
+import Link from "next/link";
+
+const Footer = ():JSX.Element  => {
   return (
     <>
       <footer className="flex flex-col justify-around items-center">
@@ -39,16 +41,16 @@ const Footer = () => {
         <nav className=" w-full bg-zinc-950 border-t-2 border-orange-500 text-zinc-400">
           <ul className="flex flex-wrap justify-center sm:justify-end">
             <li className="m-2 hover:text-speedOrange transition-all">
-              Política de Privacidade
+              <Link href={"privacidade"}> Política de Privacidade</Link>
             </li>
             <li className="m-2 hover:text-speedOrange transition-all">
-              Sobre Nós
+            <Link href={"sobre"}>Sobre Nós</Link>
             </li>
             <li className="m-2 hover:text-speedOrange transition-all">
-              Quem Somos
+            <Link href={"quem-somos"}>Quem Somos</Link>
             </li>
             <li className="m-2 hover:text-speedOrange transition-all">
-              Fale Conosco
+            <Link href={"fale-conosco"}>Fale Conosco</Link>
             </li>
           </ul>
         </nav>

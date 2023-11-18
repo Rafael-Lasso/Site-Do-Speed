@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
+import Footer from "../../../components/footer";
+import Navbar from "../../../components/navbar";
 
 function newPost() {
   return (
@@ -14,7 +13,7 @@ function newPost() {
             <input
               type="file"
               placeholder="envie uma Imagem ( Opicional - Recomendado )"
-              className="flex  flex-col my-5 bg-neutral-300 w-2/3 h-96 rounded-lg shadow-md "
+              className="flex  flex-col my-5 bg-neutral-300 w-2/3 h-48 rounded-lg shadow-md "
             />
             <input
               type="text"

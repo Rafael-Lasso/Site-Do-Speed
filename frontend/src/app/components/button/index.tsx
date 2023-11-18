@@ -1,4 +1,4 @@
-const Button = () => {
+const Button = ():JSX.Element => {
   return (
     <>
       <div className="content-button relative">

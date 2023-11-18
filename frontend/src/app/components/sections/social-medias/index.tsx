@@ -41,7 +41,7 @@ const SocialMedias = () => {
                 </div>
               </Link>
 
-              <Link href={"https://www.instagram.com/speeduzumaki"}>
+              <Link href={"https://www.instagram.com/speeduzumaki/"}>
                 <div className="filter-topic bg-gray-400 w-20 h-20 mx-2 flex justify-center items-center rounded-full cursor-pointer hover:bg-speedOrange transition-all">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -26,7 +26,7 @@ export default function Error({
         Que tal voltar para <Link href="/">o Inicio ?</Link>
       </h3>
 
-      <button
+      <Link href="/"><button
         className="bg-zinc-800 text-zinc-200 mt-5 w-60 h-16 rounded font-normal hover:text-speedOrange transition-all hover:font-semibold hover:w-72"
         onClick={
           // Attempt to recover by trying to re-render the segment
@@ -34,7 +34,7 @@ export default function Error({
         }
       >
         Vou tentar mais uma vez <br /> ( Sou teimoso )
-      </button>
+      </button></Link>
     </div>
   );
 }

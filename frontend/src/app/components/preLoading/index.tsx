@@ -1,6 +1,6 @@
 import "../../styles/loading.css";
 
-const  SharinganLoadingPage = () => {
+const  SharinganLoadingPage = ():JSX.Element  => {
   return (
     <div className="container-preloading-website">
       <div className="sharingon">

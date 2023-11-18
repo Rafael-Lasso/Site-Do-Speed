@@ -42,7 +42,7 @@ function Navbar(): JSX.Element {
               alt="Logo Speed Otaku Central"
             />
           </Link>
-          <ul id={menu} className={menu}>
+          <ul id={ menu } className={ menu }>
             <li className="cursor-pointer p-1 mt-3 mb-3 relative max-md:hidden">
               <Link href="/">Início</Link>
             </li>

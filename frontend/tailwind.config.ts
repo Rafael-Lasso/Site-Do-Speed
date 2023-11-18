@@ -19,6 +19,9 @@ const config: Config = {
       width: {
         "50vw": "80vw",
       },
+      fontFamily: {
+        Rajdhani:'font-family: "Rajdhani"'
+      }
     },
   },
   plugins: [],
